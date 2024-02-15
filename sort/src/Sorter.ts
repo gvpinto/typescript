@@ -1,4 +1,4 @@
-class Sorter {
+export class Sorter {
     constructor(public collection: number[] | string) { }
 
     sort() {
@@ -25,8 +25,3 @@ class Sorter {
     }
 };
 
-const sorter = new Sorter([-1, 10, 3, 0, -5]);
-
-sorter.sort();
-
-console.log(sorter);
