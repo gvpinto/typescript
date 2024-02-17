@@ -3,13 +3,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const Sorter_1 = require("./Sorter");
+const NumbersCollection_1 = require("./NumbersCollection");
 const charactersCollection_1 = __importDefault(require("./charactersCollection"));
-// const numbersCollection = new NumbersCollection([-1, 4, 10, 3, 0, -5]);
+const numbersCollection = new NumbersCollection_1.NumbersCollection([-1, 4, 10, 3, 0, -5]);
 // const sorter = new Sorter(numbersCollection);
 // sorter.sort();
-// console.log(numbersCollection.data);
+numbersCollection.sort();
+console.log(numbersCollection.data);
 const charactersCollection = new charactersCollection_1.default('Xaaya');
-const sorter = new Sorter_1.Sorter(charactersCollection);
-sorter.sort();
+charactersCollection.sort();
 console.log(charactersCollection.data);
